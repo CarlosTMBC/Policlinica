@@ -52,14 +52,7 @@ ListaModel2 ModeloLista2;
         if(e.getSource()==this.VistaPrincipal.btnMedico2)
         {
             this.ModeloLista2.EncolarCliente(this.VistaPrincipal.txtApellido.getText(),this.VistaPrincipal.txtNombre.getText());
-            Queue<Clientes>listaLocal = this.ModeloLista2.ListarClientes();
-            String Cadena = "";
-            for(Clientes MiListaClientes: listaLocal)
-            {
-                Cadena = Cadena + MiListaClientes.getApellido()+" "+MiListaClientes.getNombre()+"\n";
-            }
-            
-            this.VistaLista.txtAMedico2.setText(Cadena);
+            this.ModeloLista2.ListarClientes();
             this.VistaPrincipal.txtApellido.setText("");
             this.VistaPrincipal.txtNombre.setText("");
             
@@ -72,11 +65,19 @@ ListaModel2 ModeloLista2;
         }
         if(e.getSource()==this.VistaLista.btnAtMedico1)
         {
-           
+            
+            System.out.println(this.VistaLista.getBounds());
+            
         }
         if(e.getSource()==this.VistaLista.btnAtMedico2)
         {
             
+        }
+        if(e.getSource()==this.VistaLista.btnAtenderT)
+        {
+             this.VistaLista.txtAMedico1.setText("");
+             this.VistaLista.txtAMedico2.setText("");
+             
         }
     }
     

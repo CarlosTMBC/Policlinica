@@ -36,6 +36,7 @@ public class frmListaPaciente extends javax.swing.JDialog {
         jLabel3 = new javax.swing.JLabel();
         btnAtMedico1 = new javax.swing.JButton();
         btnAtMedico2 = new javax.swing.JButton();
+        btnAtenderT = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
@@ -64,6 +65,8 @@ public class frmListaPaciente extends javax.swing.JDialog {
         });
 
         btnAtMedico2.setText("Atender");
+
+        btnAtenderT.setText("Atender Todos");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -94,6 +97,10 @@ public class frmListaPaciente extends javax.swing.JDialog {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(btnAtMedico2)
                 .addGap(124, 124, 124))
+            .addGroup(layout.createSequentialGroup()
+                .addGap(280, 280, 280)
+                .addComponent(btnAtenderT)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -112,7 +119,9 @@ public class frmListaPaciente extends javax.swing.JDialog {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(btnAtMedico1)
                     .addComponent(btnAtMedico2))
-                .addContainerGap(116, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 37, Short.MAX_VALUE)
+                .addComponent(btnAtenderT)
+                .addGap(56, 56, 56))
         );
 
         pack();
@@ -167,6 +176,7 @@ public class frmListaPaciente extends javax.swing.JDialog {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     public javax.swing.JButton btnAtMedico1;
     public javax.swing.JButton btnAtMedico2;
+    public javax.swing.JButton btnAtenderT;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
